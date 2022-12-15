@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="120">
+	<meta charset="UTF-8">
+	<title>PPLSI Radar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="style/clock.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<script src="js/clock.js"></script>
+</head>
+
+
+
+<body>
+	<a class="weatherwidget-io" href="https://forecast7.com/en/34d77n96d68/ada/?unit=us" data-label_1="ADA" data-label_2="Oklahoma 74820" data-font="Verdana" data-icons="Climacons Animated" data-textcolor="#fff" data-lowcolor="#82eefd" data-suncolor="#ffff00" data-mooncolor="0000ff" data-cloudcolor="#000" data-cloudfill="#0492c2" data-raincolor="#0492c2" data-snowcolor="#fff" >ADA Oklahoma 74820</a>
+	<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+	</script>
+	<iframe class="radar_map" src="https://embed.windy.com/embed2.html?lat=35.434&lon=-98.240&detailLat=34.606&detailLon=-97.328&width=1020&height=700&zoom=7&level=surface&overlay=radar&product=radar&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=%C2%B0F&radarRange=-1" frameborder="0"></iframe>
+	<div id="MyClockDisplay" class="clock" onload="showTime();todaysDate();"></div>
+	<script  src="./js/clock.js"></script>
+	<img class="pplsiLogo" src="img/logo.png">
+
+</body>
+
+<style>
+
+body{
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	padding: 0px;
+	margin: 0px;
+	background: #431c5e;
+}
+
+.radar_map{
+	width: 100% !important;
+    height: 75% !important;
+	position: fixed;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pplsiBg{
+	position: fixed;
+	height: 30%;
+	width: 100%;
+	top: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pplsiBg1{
+	position: fixed;
+	height: 3.5%;
+	width: 100%;
+	bottom: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pplsiLogo{
+	position: fixed;
+	bottom: 2%;
+	left: 21%;
+	height: auto;
+	width: 6%;
+	padding: 0px;
+	margin: 0px;
+}
+@media only screen and (max-width: 1280px) {
+  
+}
+
+@media only screen and (max-width: 750px) {
+  .radar_map{
+	width: 100% !important;
+    height: 100% !important;
+	}
+  .pplsiLogo {
+	display: none;
+  }
+  .clock {
+	display: none;
+	height: 25% !important;
+  }
+}
+</style>
+</html>
